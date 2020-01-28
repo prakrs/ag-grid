@@ -10,9 +10,10 @@ import { RowNode } from "./entities/rowNode";
 import { GridApi } from "./gridApi";
 import { CellComp } from "./rendering/cellComp";
 import { _ } from "./utils";
+import { GridPanel } from "./gridPanel/gridPanel";
 
-@Bean('focusedCellController')
-export class FocusedCellController {
+@Bean('focusController')
+export class FocusController {
 
     @Autowired('eventService') private eventService: EventService;
     @Autowired('gridOptionsWrapper') private gridOptionsWrapper: GridOptionsWrapper;

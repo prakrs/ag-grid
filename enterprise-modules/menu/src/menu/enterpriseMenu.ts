@@ -225,11 +225,11 @@ export class EnterpriseMenu extends BeanStub {
     }
 
     private isModuleLoaded(menuTabName: string):boolean {
-        if (menuTabName===EnterpriseMenu.TAB_COLUMNS) {
+        if (menuTabName === EnterpriseMenu.TAB_COLUMNS) {
             return ModuleRegistry.isRegistered(ModuleNames.ColumnToolPanelModule);
-        } else {
-            return true;
         }
+
+        return true;
     }
 
     private isValidMenuTabItem(menuTabName: string): boolean {
